@@ -8,14 +8,12 @@ const Business = () => {
     <section id="features" className="flex flex-col py-6 sm:flex-row sm:py-16">
       <div className="flex flex-1 flex-col items-start justify-center">
         <h2 className="w-full max-w-[640px] font-poppins text-[40px] font-semibold leading-[66.8px] text-white xs:text-[48px] xs:leading-[76.8px]">
-          You do the business, <br className="hidden sm:block" />
-          we'll handle the money.
+          You bring the talent, we'll handle the connections.
         </h2>
 
         <p className="max-w-[470px] font-poppins text-[18px] font-normal leading-[30.8px] text-dimWhite">
-          With the right credit card, you can improve your financial life by
-          building credit, earning rewards, and saving money. With hundreds of
-          credit cards on the marker, we'll help you choose the right one
+          {/* TODO  */}
+          {/* DO THIS IMMEDIATLY */}
         </p>
 
         <Button styles="mt-10" />

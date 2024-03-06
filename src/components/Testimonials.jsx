@@ -13,13 +13,15 @@ const Testimonials = () => {
 
       <div className="relative z-[1] mb-6 flex w-full flex-col items-center justify-between sm:mb-16 md:flex-row">
         <h1 className="w-full max-w-[500px] text-center font-poppins text-[40px] font-semibold leading-[66.8px] text-white xs:text-[48px] xs:leading-[76.8px]">
-          What people are saying about us
+          Nonprofits: By The Numbers
         </h1>
 
         <div className="mt-6 flex w-full justify-center md:mt-0 md:block">
           <p className="max-w-[450px] font-poppins text-[18px] font-normal leading-[30.8px] text-dimWhite">
-            Everything you need to accept card payments and grow your business
-            anywhere on the planet
+            The Independent Sector regularly releases Health of the U.S.
+            Nonprofit Sector reports - an evolving and growing resource of data,
+            analysis, and recommendations about key areas powering more than 1.8
+            million U.S. nonprofits.
           </p>
         </div>
       </div>

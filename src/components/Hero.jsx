@@ -6,14 +6,6 @@ const Hero = () => {
   return (
     <section id="home" className="flex flex-col py-6  sm:py-16 md:flex-row">
       <div className="flex flex-1 flex-col items-start justify-center px-6 sm:px-16 xl:px-0">
-        <div className="bg-discount-gradient mb-2 flex flex-row items-center rounded-[10px] px-4 py-[6px]">
-          <img src={discount} alt="discount" className="h-8 w-8" />
-          <p className="ml-2 font-poppins text-lg font-normal leading-8 text-dimWhite">
-            <span className="text-white"> 20% </span> Discount For
-            <span className="text-white"> 1 Month </span> Account
-          </p>
-        </div>
-        <br />
         <div className="flex w-full flex-row items-center justify-between">
           <h1 className="flex-1 font-poppins text-[52px] font-semibold leading-[75px] text-white ss:text-[72px] ss:leading-[100px]">
             The Next
@@ -26,13 +18,13 @@ const Hero = () => {
           </div>
         </div>
         <h1 className="w-full font-poppins text-[52px] font-semibold leading-[75px] text-white ss:text-[68px] ss:leading-[100px]">
-          Payment Method
+          of Volunteering
         </h1>
 
         <p className="mt-5 max-w-[470px] font-poppins text-[18px] font-normal leading-[30.8px] text-dimWhite">
-          Our team of experts uses a methodology to identify the credit cards
-          mostly likely to fit your needs. We examine annual percentage rates,
-          annual fees, and etc.
+          Your skills empower change. Our AI-powered vector database matches
+          your talents with nonprofits, creating meaningful engagements without
+          the hassle. Transform your volunteer journey with us.
         </p>
       </div>
 

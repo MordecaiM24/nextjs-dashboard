@@ -1,8 +1,11 @@
 import React from "react";
 import { apple, bill, google } from "../assets";
-import styles, { layout } from "../style";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Billing = () => {
+  const notify = () => toast("Coming May 2024!");
+
   return (
     <section
       id="product"
@@ -24,24 +27,27 @@ const Billing = () => {
         </h2>
 
         <p className="mt-5 max-w-[470px] font-poppins text-[18px] font-normal leading-[30.8px] text-dimWhite">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
-          perferendis ut minima id ad mollitia, dolorum unde ipsam voluptates
-          porro quae enim blanditiis a beatae hic repellendus amet labore fuga
-          expedita explicabo.
+          Spend more time on what's really important.
         </p>
 
         <div className="mt-6 flex flex-row flex-wrap sm:mt-10">
-          <img
-            src={apple}
-            alt="apple_play"
-            className="mr-5 h-11 w-32 cursor-pointer object-contain"
-          />
-          <img
-            src={google}
-            alt="google_play"
-            className="h-11 w-32 cursor-pointer object-contain"
-          />
+          <button onClick={notify}>
+            <img
+              src={apple}
+              alt="apple_play"
+              className="mr-5 h-11 w-32 cursor-pointer object-contain"
+            />
+          </button>
+          <button onClick={notify}>
+            <img
+              src={google}
+              alt="google_play"
+              className="mr-5 h-11 w-32 cursor-pointer object-contain"
+            />
+          </button>
         </div>
+
+        <ToastContainer />
       </div>
     </section>
   );

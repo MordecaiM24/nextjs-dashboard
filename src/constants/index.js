@@ -6,10 +6,6 @@ import {
   instagram,
   linkedin,
   twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
   send,
   shield,
   star,
@@ -29,32 +25,32 @@ export const navLinks = [
     title: "Product",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "getStarted",
+    title: "Get Started",
   },
 ];
 
 export const features = [
   {
+    id: "feature-2",
+    icon: shield,
+    title: "100% Secure",
+    content:
+      "Always encrypted. Your personal info is never read, shared, or viewed by anyone.",
+  },
+  {
     id: "feature-1",
     icon: star,
     title: "Rewards",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  },
-  {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "The best opportunities are always out there. Make new friends, make money, make a difference.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Personalized",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Sort based on your location, interests, or abilities. We'll always find something for you.",
   },
 ];
 
@@ -62,24 +58,24 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
+      "Over the last 3 years, there's been a 14% YOY decline in micro-donations (under $100). Benevolink helps you round up those payments (coming late 2024) to make small changes into a big difference.",
+    name: "Micro-donor Decrease",
     title: "Founder & Leader",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
+      '46.8% of nonprofits said that recruiting sufficient volunteers is a "big problem" for their organization. \n 38.4% said its a "big problem" to find volunteers who are available, and 35.4% said it\'s difficult to find volunteers with the necessary skills.',
+    name: "Human Capital",
     title: "Founder & Leader",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
+      '48.5% of nonprofits reported increasing staff workloads to meet rising demands for services. Researchers concluded, "Nonprofits will likely face staff burnout or service delivery issues if this continues."',
+    name: "Necessity",
     title: "Founder & Leader",
     img: people03,
   },
@@ -88,7 +84,7 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "Active Users",
+    title: "Human Capital",
     value: "3800+",
   },
   {
@@ -189,24 +185,5 @@ export const socialMedia = [
     id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/",
-  },
-];
-
-export const clients = [
-  {
-    id: "client-1",
-    logo: airbnb,
-  },
-  {
-    id: "client-2",
-    logo: binance,
-  },
-  {
-    id: "client-3",
-    logo: coinbase,
-  },
-  {
-    id: "client-4",
-    logo: dropbox,
   },
 ];
