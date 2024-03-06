@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Business = () => {
   return (
-    <section className="flex flex-col py-6 sm:flex-row sm:py-16">
+    <section id="features" className="flex flex-col py-6 sm:flex-row sm:py-16">
       <div className="flex flex-1 flex-col items-start justify-center">
         <h2 className="w-full max-w-[640px] font-poppins text-[40px] font-semibold leading-[66.8px] text-white xs:text-[48px] xs:leading-[76.8px]">
           You do the business, <br className="hidden sm:block" />
