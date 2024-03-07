@@ -1,9 +1,11 @@
 import React from "react";
+import axios from "axios";
 
 const SignUp = () => {
   return (
     <div>
       <button
+        className="bg-red-500 text-white text-lg p-5"
         onClick={async (e) => {
           e.preventDefault();
 
