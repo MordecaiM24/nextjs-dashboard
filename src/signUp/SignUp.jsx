@@ -16,6 +16,7 @@ const SignUp = () => {
             })
             .then((response) => {
               // Success! Display confirmation message or similar
+              alert("Success");
             })
             .catch((error) => {
               // Error handling
