@@ -1,5 +1,9 @@
 import nodemailer from "nodemailer";
 
+export const config = {
+  runtime: 'edge'
+}
+
 module.exports = async (req, res) => {
   const formData = req.body;
 

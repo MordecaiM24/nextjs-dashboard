@@ -5,7 +5,7 @@ const SignUp = () => {
   return (
     <div>
       <button
-        className="bg-red-500 text-white text-lg p-5"
+        className="bg-red-500 p-5 text-lg text-white"
         onClick={async (e) => {
           e.preventDefault();
 
