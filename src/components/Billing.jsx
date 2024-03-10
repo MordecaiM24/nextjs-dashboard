@@ -1,5 +1,5 @@
 import React from "react";
-import { apple, bill, google } from "../assets";
+import { apple, google } from "../assets";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => {
@@ -7,7 +6,7 @@ const Hero = () => {
     <section id="home" className="flex flex-col py-6  sm:py-16 md:flex-row">
       <div className="relative my-10 flex flex-1 items-center justify-center md:my-0">
         <div className="flex flex-1 flex-col items-start justify-center px-6 sm:px-16 xl:px-0">
-          <div className="flex w-full flex-row items-center justify-between">
+          <div className="flex w-full flex-row items-center justify-around">
             <h1 className="flex-1 font-poppins text-[52px] font-semibold leading-[75px] text-white ss:text-[72px] ss:leading-[100px]">
               The Next
               <br className="hidden sm:block" />{" "}

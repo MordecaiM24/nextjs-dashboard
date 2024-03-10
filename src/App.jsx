@@ -18,7 +18,7 @@ import {
 
 const App = () => {
   return (
-    <div className="w-full overflow-hidden bg-primary">
+    <div className="w-full overflow-hidden bg-primary px-0 sm:px-12 md:px-24 lg:px-36">
       <div className="flex items-center justify-center px-6 sm:px-16">
         <div className="w-full xl:max-w-[1280px]">
           <Navbar />
