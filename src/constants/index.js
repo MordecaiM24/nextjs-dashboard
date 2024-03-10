@@ -61,7 +61,6 @@ export const feedback = [
       "Over the last 3 years, there's been a 14% YOY decline in micro-donations (under $100). Benevolink helps you round up those payments (coming late 2024) to make small changes into a big difference.",
     name: "Micro-donor Decrease",
     title: "Founder & Leader",
-    img: people01,
   },
   {
     id: "feedback-2",
@@ -69,7 +68,6 @@ export const feedback = [
       '46.8% of nonprofits said that recruiting sufficient volunteers is a "big problem" for their organization. \n 38.4% said its a "big problem" to find volunteers who are available, and 35.4% said it\'s difficult to find volunteers with the necessary skills.',
     name: "Human Capital",
     title: "Founder & Leader",
-    img: people02,
   },
   {
     id: "feedback-3",
@@ -77,7 +75,6 @@ export const feedback = [
       '48.5% of nonprofits reported increasing staff workloads to meet rising demands for services. Researchers concluded, "Nonprofits will likely face staff burnout or service delivery issues if this continues."',
     name: "Necessity",
     title: "Founder & Leader",
-    img: people03,
   },
 ];
 
