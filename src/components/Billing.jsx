@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Billing = () => {
-  const notify = () => toast("Coming May 2024!");
+  const notify = () => toast.info("Coming May 2024!");
 
   return (
     <section
@@ -41,7 +41,18 @@ const Billing = () => {
           </div>
         </div>
 
-        <ToastContainer />
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
     </section>
   );

@@ -1,17 +1,31 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { eleosLogo } from "../assets";
+import { ToastContainer, toast } from "react-toastify";
 
 const SignUp = () => {
-  return <SignUpForm />;
-};
-
-export default SignUp;
-
-const SignUpForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [organization, setOrganization] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    toast.success(
+      "Thanks for signing up. You'll be the first to know about new updates, releases and more!",
+    );
+
+    const res = await axios.post(
+      "https://hook.us1.make.com/shquavjbv6vzwzcrrgjjdhowf3r7iyk5",
+      {
+        name,
+        email,
+        organization,
+      },
+    );
+
+    console.log(res);
+  };
 
   return (
     <div className="h-screen bg-white">
@@ -28,27 +42,7 @@ const SignUpForm = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form
-            className="space-y-6"
-            onSubmit={async (e) => {
-              e.preventDefault();
-              alert(`
-              Name: ${name}
-              Email: ${email}
-              Organization: ${organization}
-            `);
-              const res = await axios.post(
-                "https://hook.us1.make.com/shquavjbv6vzwzcrrgjjdhowf3r7iyk5",
-                {
-                  name,
-                  email,
-                  organization,
-                },
-              );
-
-              console.log(res);
-            }}
-          >
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label className="block text-sm font-medium leading-6 text-gray-900">
                 Full Name *
@@ -117,6 +111,21 @@ const SignUpForm = () => {
           </form>
         </div>
       </div>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </div>
   );
 };
+
+export default SignUp;
