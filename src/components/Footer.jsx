@@ -8,10 +8,13 @@ const Footer = () => {
     <section className="flex flex-col items-center justify-center py-6 sm:py-16">
       <div className="mb-8 flex w-full flex-col items-center justify-start md:flex-row">
         <div className="mr-10 flex flex-1 flex-col justify-start">
-          <img src={logo} alt="logo" className="h-18 w-[266px]" />
+          <p className="font-poppins text-5xl font-semibold">
+            <span className="text-white">Benevo</span>
+            <span className="text-secondary">link</span>
+          </p>
 
           <p className="mt-4 max-w-[300px] font-poppins text-[18px] font-normal leading-[30.8px] text-dimWhite">
-            A new way to make payments easy, reliable, and secure
+            A new way to make volunteering easy, reliable, and secure
           </p>
         </div>
 
@@ -24,14 +27,15 @@ const Footer = () => {
               <h4 className="font-poppins text-lg font-medium leading-7 text-white">
                 {footerLink.title}
               </h4>
-              <ul className="mt-4 list-none">
+              <ul className="mt-4 flex flex-col items-start justify-center">
                 {footerLink.links.map((link, index) => (
-                  <li
+                  <a
                     key={link.name}
                     className="mb-2 cursor-pointer font-poppins text-base font-normal leading-6 text-dimWhite hover:text-secondary"
+                    href="/signUp"
                   >
                     {link.name}
-                  </li>
+                  </a>
                 ))}
               </ul>
             </div>
@@ -41,10 +45,10 @@ const Footer = () => {
 
       <div className="flex w-full flex-col items-center justify-between border-t-[1px] border-t-slate-700 pt-6 md:flex-row">
         <p className="font-poppins text-lg font-normal leading-7 text-white">
-          2024 Benevolink. All Rights Reserved.
+          2024 ©Benevolink. All Rights Reserved.
         </p>
 
-        <div className="mt-6 flex flex-row md:mt-0">
+        {/* <div className="mt-6 flex flex-row md:mt-0">
           {socialMedia.map((social, idx) => (
             <img
               key={social.id}
@@ -53,7 +57,7 @@ const Footer = () => {
               className={`h-5 w-5 cursor-pointer object-contain ${idx !== socialMedia.length - 1 ? "mr-6" : "mr-0"}`}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

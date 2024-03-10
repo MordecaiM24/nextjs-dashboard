@@ -35,7 +35,7 @@ const App = () => {
         <div className="w-full xl:max-w-[1280px]">
           <Business />
           <Billing />
-          <CardDeal />
+          {/* <CardDeal /> */}
           <Testimonials />
           <CTA />
           <Footer />

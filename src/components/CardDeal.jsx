@@ -6,7 +6,7 @@ import Button from "./Button";
 const CardDeal = () => {
   return (
     <section className="flex flex-col-reverse py-6 sm:py-16 md:flex-row">
-      <div className="flex flex-1 flex-col items-start justify-center">
+      <div className="flex flex-1 flex-col items-center justify-center">
         <h2 className="w-full max-w-[600px] font-poppins text-[40px] font-semibold leading-[66.8px] text-white xs:text-[48px] xs:leading-[76.8px]">
           Find a better card deal in a few easy steps
         </h2>
@@ -21,9 +21,9 @@ const CardDeal = () => {
         <Button styles="mt-10" />
       </div>
 
-      <div className="relative ml-0 mt-10 flex flex-1 items-center justify-center md:ml-10 md:mt-0">
+      {/* <div className="relative ml-0 mt-10 flex flex-1 items-center justify-center md:ml-10 md:mt-0">
         <img src={card} alt="card" className="h-full w-full" />
-      </div>
+      </div> */}
     </section>
   );
 };
